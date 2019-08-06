@@ -37,6 +37,8 @@ public class MessageServlet extends HttpServlet{
 			 messageJson(req, res);
 		}
 		
+		
+		
 		if(type.endsWith("stuForumDetail"))
 		{
 			 stuForumDetail(req, res);

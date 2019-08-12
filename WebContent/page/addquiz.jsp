@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
+ <%@ page language="java" pageEncoding="UTF-8"%>
 <jsp:directive.page import="java.text.SimpleDateFormat"/>
 <jsp:directive.page import="java.util.Date"/>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -177,6 +177,11 @@ if((Tuser)request.getSession().getAttribute("user")!=null){
 		            </div>
 		            <br>
 		            
+		            <div id="left">
+		            	<a href="<%=path%>/select?type=MCQ"> MCQ</a>
+		            	<a href="<%=path%>/select?type=shortAnswer"> short answer</a>
+		            	<a href="<%=path%>/select?type=scale"> scale</a>
+		            </div>
 		            <!-- Form validations start-->
 		                <section class="panel" id="classInfoPanel">
 		                    <header class="panel-heading">

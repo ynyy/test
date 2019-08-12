@@ -24,9 +24,7 @@ public class MessageServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		
 		String type=req.getParameter("type");
-		
 		if(type.endsWith("teacherForumDetail"))
 		{
 			 teacherForumDetail(req, res);
@@ -47,7 +45,6 @@ public class MessageServlet extends HttpServlet{
 		{
 			 stuSendMsg(req, res);
 		}
-		
 	}
 	
 	public void stuSendMsg(HttpServletRequest req, HttpServletResponse res)
